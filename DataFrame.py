@@ -3,8 +3,8 @@ from scipy.sparse import csr_matrix
 from sklearn.decomposition import TruncatedSVD
 import numpy as np
 
-ratings = pd.read_csv("./ml-latest-small/ratings.csv")
-movies = pd.read_csv("./ml-latest-small/movies.csv")
+ratings = pd.read_csv("ml-latest-small/ratings.csv")
+movies = pd.read_csv("ml-latest-small/movies.csv")
 
 # Merge dos dataframes de ratings e de filmes
 data = pd.merge(ratings, movies, on='movieId')
